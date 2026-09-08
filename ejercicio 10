@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //Declaracion de variable
+    int diaInicial, mesInicial, diaFinal, mesFinal;
+    int diasIniciales, diasFinales, diferenciaDias, meses, dias;
+
+    //Entrada de datos
+    cout << "diaInicial: ";
+    cin >> diaInicial;
+    cout << "mesInicial: ";
+    cin >> mesInicial;
+    cout << "diaFinal: ";
+    cin >> diaFinal;
+    cout << "mesFinal: ";
+    cin >> mesFinal;
+
+    //Proceso
+    diasIniciales = (mesInicial - 1) * 30 + diaInicial;
+    diasFinales = (mesFinal - 1) * 30 + diaFinal;
+    diferenciaDias = diasFinales - diasIniciales;
+
+    meses = diferenciaDias / 30;
+    dias = diferenciaDias % 30;
+
+    //Salida de Datos
+    cout << meses << endl;
+    cout << dias << endl;
+
+    return 0;
+}
