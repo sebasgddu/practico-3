@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //Declaracion de variable
+    double A, B, C, D, E, F;
+    double det, detX, detY, X, Y;
+
+    //Entrada de datos
+    cout << "A: ";
+    cin >> A;
+    cout << "B: ";
+    cin >> B;
+    cout << "C: ";
+    cin >> C;
+    cout << "D: ";
+    cin >> D;
+    cout << "E: ";
+    cin >> E;
+    cout << "F: ";
+    cin >> F;
+
+    //Proceso
+    det = (A * E) - (B * D);
+
+    //Salida de Datos
+    if (det != 0) {
+        detX = (C * E) - (B * F);
+        detY = (A * F) - (C * D);
+        X = detX / det;
+        Y = detY / det;
+        cout << X << endl;
+        cout << Y << endl;
+    } else {
+        detX = (C * E) - (B * F);
+        if (detX == 0) {
+            cout << "Infinitas soluciones" << endl;
+        } else {
+            cout << "Sin solucion" << endl;
+        }
+    }
+
+    return 0;
+}
