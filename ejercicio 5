@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+//Declaracion de variable
+double cuotamensual;
+double CapitalPrestado,numeroDeCuotas,TasadeInteresMensual,MontoTotal,InteresTotal,factor;
+//Entrada de datos
+cout << "CapitalPrestado";
+cin>>CapitalPrestado;
+cout << "TasadeInteresMensual";
+cin>>TasadeInteresMensual;
+cout<<"numeroDeCuotas";
+cin>>numeroDeCuotas;
+
+
+//Proceso
+factor= pow(1+TasadeInteresMensual,numeroDeCuotas);
+cuotamensual=CapitalPrestado*(TasadeInteresMensual*factor)/(factor-1);
+MontoTotal=cuotamensual*numeroDeCuotas;
+InteresTotal=MontoTotal-CapitalPrestado;
+
+
+//Salida de Datos
+cout<<cuotamensual<<endl; 
+cout<<MontoTotal<<endl; 
+cout<<InteresTotal<<endl;
+
+    return 0;
+}
