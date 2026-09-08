@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //Declaracion de variable
+    double kWh, tarifa, montoPagar;
+
+    //Entrada de datos
+    cout << "kWh: ";
+    cin >> kWh;
+
+    //Proceso y Salida de Datos
+    if (kWh == 0) {
+        cout << "SIN CONSUMO REGISTRADO" << endl;
+    } else {
+        if (kWh <= 100) {
+            tarifa = 0.30;
+            cout << "Categoria basica" << endl;
+        } else if (kWh <= 300) {
+            tarifa = 0.50;
+            cout << "Categoria media" << endl;
+        } else if (kWh <= 600) {
+            tarifa = 0.75;
+            cout << "Categoria alta" << endl;
+        } else {
+            tarifa = 1.10;
+            cout << "Categoria industrial" << endl;
+        }
+
+        montoPagar = (kWh * tarifa) + 8.00;
+        cout << montoPagar << endl;
+    }
+
+    return 0;
+}
