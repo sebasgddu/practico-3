@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //Declaracion de variable
+    int minutosTotales;
+    int dias, horas, minutosRestantes;
+
+    //Entrada de datos
+    cout << "minutosTotales: ";
+    cin >> minutosTotales;
+
+    //Proceso
+    dias = minutosTotales / 1440;
+    horas = (minutosTotales % 1440) / 60;
+    minutosRestantes = minutosTotales % 60;
+
+    //Salida de Datos
+    cout << dias << endl;
+    cout << horas << endl;
+    cout << minutosRestantes << endl;
+
+    return 0;
+}
