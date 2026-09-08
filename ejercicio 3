@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+//Declaracion de variable
+double p1, p2;
+double final;
+double pi ;
+double notaFinal;
+//Entrada de datos
+cout << "Ingrese la nota del p1 (max 25)";
+cin>>p1;
+cout << "ingrese la nota del p2 (max 25)";
+cin>>p2;
+cout<<"ingrese la nota del final(max 30)";
+cin>>final;
+cout<<"ingrese la nota del pi(max 20)";
+cin>>pi;
+
+//Proceso
+notaFinal=p1+p2+final+pi;
+if (notaFinal>=51){
+    cout<<"aprobo"<<endl;
+}
+else if (notaFinal<51){
+    cout<<"reprobo"<<endl;
+}
+
+
+//Salida de Datos
+cout<<notaFinal<<endl; 
+
+    return 0;
+}
