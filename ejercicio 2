@@ -1,0 +1,25 @@
+#include
+using namespace std;
+
+int main()
+{
+//Declaracion de variable
+double altura, radio;
+double pi=3.1416;
+double areaTotal, areaLateral, volumen;
+//Entrada de datos
+cout << "ingrese la altura en metros";
+cin>>altura;
+cout << "ingrese el radio en metros";
+cin>>radio;
+//Proceso
+areaLateral=2pialturaradio;
+areaTotal=2piradio(radioaltura);
+volumen=pi(radio*radio)*altura;
+//Salida de Datos
+cout<<areaTotal<<endl;
+cout<<areaLateral<<endl;
+cout<<volumen<<endl;
+
+return 0;
+}
