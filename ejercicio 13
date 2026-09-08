@@ -1,0 +1,49 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    //Declaracion de variable
+    double a, b, c;
+    double disc, x1, x2, parteReal, parteImaginaria;
+
+    //Entrada de datos
+    cout << "a: ";
+    cin >> a;
+    cout << "b: ";
+    cin >> b;
+    cout << "c: ";
+    cin >> c;
+
+    //Proceso y Salida de Datos
+    if (a == 0 && b == 0) {
+        if (c == 0) {
+            cout << "Identidad (Infinitas soluciones)" << endl;
+        } else {
+            cout << "Sin solucion" << endl;
+        }
+    } else if (a == 0) {
+        x1 = -c / b;
+        cout << "Ecuacion lineal x: " << x1 << endl;
+    } else {
+        disc = (b * b) - (4 * a * c);
+
+        if (disc > 0) {
+            x1 = (-b + sqrt(disc)) / (2 * a);
+            x2 = (-b - sqrt(disc)) / (2 * a);
+            cout << x1 << endl;
+            cout << x2 << endl;
+        } else if (disc == 0) {
+            x1 = -b / (2 * a);
+            cout << x1 << endl;
+        } else {
+            parteReal = -b / (2 * a);
+            parteImaginaria = sqrt(-disc) / (2 * a);
+            cout << parteReal << " + " << parteImaginaria << "i" << endl;
+            cout << parteReal << " - " << parteImaginaria << "i" << endl;
+        }
+    }
+
+    return 0;
+}
