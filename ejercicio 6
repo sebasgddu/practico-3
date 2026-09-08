@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // Declaracion de variables
+    double C, F, K, Ra;
+
+    // Entrada de datos
+    cout << "Ingrese la temperatura en grados Celsius (C): ";
+    cin >> C;
+
+    // Proceso
+    F = (C * 9.0 / 5.0) + 32;
+    K = C + 273.15;
+    Ra = (C + 273.15) * 9.0 / 5.0;
+
+    // Salida de Datos
+ 
+    cout <<  F << endl;
+    cout << K << endl;
+    cout  << Ra << endl;
+
+    return 0;
+}
