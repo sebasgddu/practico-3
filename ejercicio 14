@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //Declaracion de variable
+    int cantPollo, cantCarne, cantQueso, cantRefresco, cantAgua;
+    double totalPollo, totalCarne, totalQueso, totalRefresco, totalAgua, totalGeneral;
+
+    //Entrada de datos
+    cout << "cantPollo: ";
+    cin >> cantPollo;
+    cout << "cantCarne: ";
+    cin >> cantCarne;
+    cout << "cantQueso: ";
+    cin >> cantQueso;
+    cout << "cantRefresco: ";
+    cin >> cantRefresco;
+    cout << "cantAgua: ";
+    cin >> cantAgua;
+
+    //Proceso
+    totalPollo = cantPollo * 3.50;
+    totalCarne = cantCarne * 4.00;
+    totalQueso = cantQueso * 3.00;
+    totalRefresco = cantRefresco * 5.00;
+    totalAgua = cantAgua * 3.00;
+
+    totalGeneral = totalPollo + totalCarne + totalQueso + totalRefresco + totalAgua;
+
+    //Salida de Datos
+    cout << totalPollo << endl;
+    cout << totalCarne << endl;
+    cout << totalQueso << endl;
+    cout << totalRefresco << endl;
+    cout << totalAgua << endl;
+    cout << totalGeneral << endl;
+
+    return 0;
+}
